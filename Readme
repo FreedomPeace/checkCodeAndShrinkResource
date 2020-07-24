@@ -1,0 +1,3 @@
+Plugin  findbugs.  --- 查出代码存在的bug
+        PMD---代码的优化
+        checkStyle---校验代码的规范
