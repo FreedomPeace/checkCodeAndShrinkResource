@@ -1,0 +1,11 @@
+1. 代码的压缩混淆处理
+
+
+2.未被引用的资源剔除
+
+                        压缩代码         压缩资源
+release_apk(size)    minifyEnabled  shrinkResources  enableR8.fullMode
+    865K                true            true            true
+    901K                true            true            false
+    913K                true            false
+    1.3M                false           false
