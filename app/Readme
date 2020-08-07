@@ -1,11 +1,12 @@
 1. 代码的压缩混淆处理
-
-
+    混淆处理的目的是通过缩短应用的类，方法和字段的名称来减小应用的大小。
+    R8优化，会进一步缩减应用大小，R8会在更深层次上检查代码，以移除更多不使用的代码，
+    或者在可能的情况下重写代码，以使其简洁。
 2.未被引用的资源剔除
 
                         压缩代码         压缩资源
 release_apk(size)    minifyEnabled  shrinkResources  enableR8.fullMode
     865K                true            true            true
     901K                true            true            false
-    913K                true            false
-    1.3M                false           false
+    913K                true            false           false
+    1.3M                false           false           false
